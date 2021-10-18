@@ -53,11 +53,7 @@ export default function DateForm() {
     inputRefEnd.current.value = "";
   };
 
-  const disabledDates = [
-    new Date(2018, 0, 1),
-    new Date(2018, 1, 2),
-  ];
-
+ 
   return (
     <form className="inputs">
       <div className="input-container">
