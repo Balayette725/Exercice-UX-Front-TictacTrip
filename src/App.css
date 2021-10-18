@@ -1,38 +1,224 @@
-.App {
-  text-align: center;
+*{
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+body{
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/thumb-1920-779092.jpg');
+  background-repeat: no-repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title{
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 2em 0 2em 0;
+}
+
+.container{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  max-width: 82rem;
+}
+
+.card{
+  border-radius: 0.3em;
+  background: white;
+  width: 20em;
+  height: 30em;
+}
+.cardleft{
+  margin-right: 20px;
+}
+
+
+
+.input{
+  padding-left: 8em;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  border-radius: .3em;
+}
+
+.input:hover {
+  background: #ced1d1;
+}
+
+.inputLabel{
+  position: absolute;
+  left: 0.5em;
+}
+
+.input-container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: .3em;
+  width: 100%;
+  height: 3em;
+}
+
+
+
+
+.popover_visible{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top:0;
+  left:19.7em;
+  border-radius: .3em;
+  width:20em;
+  height: auto;
+  padding: 1em;
+  box-shadow: 0 0 .5em .002em;
+  background: white;
+}
+.innerCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding:0 24px 0 24px;
+  height: 100%;
+}
+
+.inputs{
+  border-radius: .3em;
+  background: #e7ebeb;
+}
+
+.separation{
+  background: black;
+  min-height: 1px;
+  margin: 0 8px 0 8px;
+}
+.popover-button{
+  padding-left: 5px;
+  text-align: start;
+  background: white;
+  border: none;
+  border-radius: .3em;
+  width: 100%;
+  height: 3em;
+}
+
+.popover-button:hover{
+  background: #e7ebeb;
+}
+
+.calendar{
+  position: absolute;
+  top: -1.5em;
+  left: 19.7em;
+  border-radius: .3em;
+  width: auto;
+  height: auto;
+  padding: 1em;
+  box-shadow: 0 0 .5em .002em;
+  background: white;
+}
+
+.erase-button{
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 1em;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  height: 2em;
+  width: 2em;
+}
+
+
+.erase-button:active{
+ border: 50px;
+ border-color:#522ebd;
+ background-color: #ced1d1;
+}
+
+.button__group{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.select-input{
+  margin-bottom: .5em;
+  border: none;
+  border-radius: .3em;
+  height: 3em;
+  width: 100%;
+  background: #e7ebeb;
+}
+
+.select-input:hover {
+  background: #ced1d1;
+}
+
+.select_erase-button{
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 1em;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  height: 2em;
+  width: 2em;
+}
+
+.select_erase-button:active{
+  border: 50px;
+  border-color:#522ebd;
+  background-color: #ced1d1;
+ }
+ 
+
+.select-container{
+  display: flex;
+  align-items: center;
+}
+
+.button-addPassenger{
+  z-index: 1000;
+  margin-top: .5em;
+  border: none;
+  border-radius: .3em;
+  background: #e7ebeb;
+  padding: .5em;
+  height: 4em;
+}
+
+.button-addPassenger:hover{
+  background: #ced1d1;
+}
+
+.research{
+  font-weight: bold;
+  background:rgba(0, 168, 143, 1);
   color: white;
+  border : none;
+  border-radius: .3em;
+  height: 4em;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.research:hover{
+  background:rgb(0, 128, 108);
 }
